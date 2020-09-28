@@ -1,0 +1,28 @@
+{
+  "name": "eip712-signing-demo",
+  "version": "1.0.0",
+  "description": "## dependencies - http-server `npm install -g http-server` - browserify `npm install -g browserify` - ethereumjs-util `npm install --save ethereumjs-util` - Buffer `npm install --save buffer`",
+  "main": "bundle.js",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "eth-sig-util": "^2.5.2",
+    "http-server": "^0.12.3",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile": "browserify sign.js > bundle.js",
+    "serve": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nglglhtr/eip712-signing-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nglglhtr/eip712-signing-demo/issues"
+  },
+  "homepage": "https://github.com/nglglhtr/eip712-signing-demo#readme"
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Network Agnostic Transactions [Demo]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body class="container mt-4">
+    <h2>Network Agnostic Transactions [Demo]</h2>
+    <div class="alert alert-primary">
+      <p>Connected account: <code id = "account"></code></p>
+      <p>Connected Chain ID: <code id = "chain"></code></p>
+    </div>
+    <div class="row">
+      <div class = "col">
+        <div class = "alert alert-warning">
+          <p class="text-sm">Details on Mumbai</p>
+          <ul class="list-group">
+            <li class="list-group-item">mumbai chain id: <code>80001</code></li>
+            <li class="list-group-item">Token: <code id = "mum-token"></code></li>
+            <li class="list-group-item">Balance of token: <code id="mum-balance"></code></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div class = "p-2">
+      <div class = "row">
+        <div class = "col">
+          <input 
+            id="setAmount"
+            class="form-control" 
+            type="number" 
+            placeholder="Amount">
+        </div>
+        <div class = "col">
+          <input 
+            id="setAddress"
+            class="form-control" 
+            type="text" 
+            placeholder="Transfer to">
+        </div>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+        <div class = "p-3">
+          <button class="btn btn-primary" id="transferBtn">
+            Transfer
+          </button>
+          <p class="text-sm">Network: Mumbai</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p id="resultFor"></p>
+    <pre id = "result" class = "text-wrap text-break pb-4">
+      Will display result from signature generation here
+    </pre>
+    <pre id= "executed"  class = "text-wrap text-break pb-4">
+      Will display result after the relayer has executed the tx here
+    </pre>
+    <hr/>
+    <div class = "p-3">
+      <center>
+        Built for <a href="https://ethglobal.online/">ETHOnline 2020</a> by <a href="https://matic.network">Matic Network</a>.
+      </center>
+    </div>
+    <hr />
+
+  </body>
+
+  <script src="./bundle.js" language="javascript"></script>
+
+</html>
