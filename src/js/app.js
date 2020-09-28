@@ -10,6 +10,7 @@ App = {
   initWeb3: async function() {
     if (typeof window.ethereum !== 'undefined') {
       App.web3Provider = window['ethereum']
+      await window['ethereum'].enable()
     }
     App.web3js = new Web3 (App.web3Provider)
     return App.initContract();
